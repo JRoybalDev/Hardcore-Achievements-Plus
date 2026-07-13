@@ -1,0 +1,14 @@
+{
+	"required": true,
+	"package": "com.xcusestudios.hardcoreachievementsplus.mixin",
+	"compatibilityLevel": "JAVA_25",
+	"mixins": [
+		"MinecraftServerMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}

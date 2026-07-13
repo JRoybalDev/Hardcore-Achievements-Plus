@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "hardcore_achievements_plus",
+	"version": "${version}",
+	"name": "Hardcore Achievements Plus",
+	"description": "Expanded achievements for hardcore Minecraft.",
+	"authors": [
+		"Xcuse Studios"
+	],
+	"contact": {
+		"homepage": "https://github.com/xcuse-studios",
+		"sources": "https://github.com/xcuse-studios/hardcore-achievements-plus"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/hardcore_achievements_plus/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.xcusestudios.hardcoreachievementsplus.HardcoreAchievementsPlus"
+		],
+		"client": [
+			"com.xcusestudios.hardcoreachievementsplus.client.HardcoreAchievementsPlusClient"
+		]
+	},
+	"mixins": [
+		"hardcore_achievements_plus.mixins.json",
+		{
+			"config": "hardcore_achievements_plus.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
