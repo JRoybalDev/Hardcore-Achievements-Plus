@@ -1,0 +1,55 @@
+{
+	"parent": "hardcore_achievements_plus:revival/tier_3",
+	"criteria": {
+		"kill_hoglin": {
+			"conditions": {
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"minecraft:entity_type": "minecraft:hoglin"
+						}
+					}
+				]
+			},
+			"trigger": "minecraft:player_killed_entity"
+		},
+		"pork": {
+			"conditions": {
+				"items": [
+					{
+						"items": "minecraft:cooked_porkchop",
+						"count": {
+							"min": 16
+						}
+					}
+				]
+			},
+			"trigger": "minecraft:inventory_changed"
+		}
+	},
+	"requirements": [
+		[
+			"kill_hoglin"
+		],
+		[
+			"pork"
+		]
+	],
+	"display": {
+		"title": {
+			"text": "Hoglin Butcher"
+		},
+		"description": {
+			"text": "Kill a hoglin and hold 16 cooked porkchops at once"
+		},
+		"icon": {
+			"id": "minecraft:cooked_porkchop"
+		},
+		"frame": "goal",
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"sends_telemetry_event": false
+}

@@ -1,0 +1,28 @@
+{
+	"parent": "hardcore_achievements_plus:revival/tier_1",
+	"criteria": {
+		"always": {
+			"trigger": "minecraft:tick"
+		}
+	},
+	"requirements": [
+		[
+			"always"
+		]
+	],
+	"display": {
+		"title": {
+			"text": "Tier 2 \u2014 Flames"
+		},
+		"description": {
+			"text": "Revivals for an established base"
+		},
+		"icon": {
+			"id": "minecraft:iron_block"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"sends_telemetry_event": false
+}

@@ -1,0 +1,107 @@
+{
+	"parent": "hardcore_achievements_plus:revival/tier_1",
+	"criteria": {
+		"kill_zombie": {
+			"conditions": {
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"minecraft:entity_type": "minecraft:zombie"
+						}
+					}
+				]
+			},
+			"trigger": "minecraft:player_killed_entity"
+		},
+		"kill_skeleton": {
+			"conditions": {
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"minecraft:entity_type": "minecraft:skeleton"
+						}
+					}
+				]
+			},
+			"trigger": "minecraft:player_killed_entity"
+		},
+		"kill_creeper": {
+			"conditions": {
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"minecraft:entity_type": "minecraft:creeper"
+						}
+					}
+				]
+			},
+			"trigger": "minecraft:player_killed_entity"
+		},
+		"kill_spider": {
+			"conditions": {
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"minecraft:entity_type": "minecraft:spider"
+						}
+					}
+				]
+			},
+			"trigger": "minecraft:player_killed_entity"
+		},
+		"kill_witch": {
+			"conditions": {
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"minecraft:entity_type": "minecraft:witch"
+						}
+					}
+				]
+			},
+			"trigger": "minecraft:player_killed_entity"
+		}
+	},
+	"requirements": [
+		[
+			"kill_zombie"
+		],
+		[
+			"kill_skeleton"
+		],
+		[
+			"kill_creeper"
+		],
+		[
+			"kill_spider"
+		],
+		[
+			"kill_witch"
+		]
+	],
+	"display": {
+		"title": {
+			"text": "Monster Purge"
+		},
+		"description": {
+			"text": "Slay a zombie, a skeleton, a creeper, a spider and a witch"
+		},
+		"icon": {
+			"id": "minecraft:iron_sword"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"sends_telemetry_event": false
+}

@@ -2,9 +2,7 @@
 	"required": true,
 	"package": "com.xcusestudios.hardcoreachievementsplus.client.mixin",
 	"compatibilityLevel": "JAVA_25",
-	"client": [
-		"MinecraftClientMixin"
-	],
+	"client": [],
 	"injectors": {
 		"defaultRequire": 1
 	},

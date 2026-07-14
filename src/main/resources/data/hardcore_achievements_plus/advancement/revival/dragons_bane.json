@@ -1,0 +1,39 @@
+{
+	"parent": "hardcore_achievements_plus:revival/tier_4",
+	"criteria": {
+		"kill_dragon": {
+			"conditions": {
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"minecraft:entity_type": "minecraft:ender_dragon"
+						}
+					}
+				]
+			},
+			"trigger": "minecraft:player_killed_entity"
+		}
+	},
+	"requirements": [
+		[
+			"kill_dragon"
+		]
+	],
+	"display": {
+		"title": {
+			"text": "Dragon's Bane"
+		},
+		"description": {
+			"text": "Slay the Ender Dragon to trade its life for your friend's"
+		},
+		"icon": {
+			"id": "minecraft:dragon_head"
+		},
+		"frame": "challenge",
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"sends_telemetry_event": false
+}

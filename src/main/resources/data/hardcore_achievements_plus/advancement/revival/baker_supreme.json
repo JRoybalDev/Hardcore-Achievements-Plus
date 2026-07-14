@@ -1,0 +1,44 @@
+{
+	"parent": "hardcore_achievements_plus:revival/tier_1",
+	"criteria": {
+		"bakery": {
+			"conditions": {
+				"items": [
+					{
+						"items": "minecraft:cake"
+					},
+					{
+						"items": "minecraft:pumpkin_pie"
+					},
+					{
+						"items": "minecraft:sugar",
+						"count": {
+							"min": 16
+						}
+					}
+				]
+			},
+			"trigger": "minecraft:inventory_changed"
+		}
+	},
+	"requirements": [
+		[
+			"bakery"
+		]
+	],
+	"display": {
+		"title": {
+			"text": "Baker Supreme"
+		},
+		"description": {
+			"text": "Hold a cake, a pumpkin pie and 16 sugar at once"
+		},
+		"icon": {
+			"id": "minecraft:cake"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"sends_telemetry_event": false
+}

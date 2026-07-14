@@ -1,0 +1,55 @@
+{
+	"parent": "hardcore_achievements_plus:revival/tier_2",
+	"criteria": {
+		"summon_golem": {
+			"conditions": {
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"minecraft:entity_type": "minecraft:iron_golem"
+						}
+					}
+				]
+			},
+			"trigger": "minecraft:summoned_entity"
+		},
+		"iron_blocks": {
+			"conditions": {
+				"items": [
+					{
+						"items": "minecraft:iron_block",
+						"count": {
+							"min": 4
+						}
+					}
+				]
+			},
+			"trigger": "minecraft:inventory_changed"
+		}
+	},
+	"requirements": [
+		[
+			"summon_golem"
+		],
+		[
+			"iron_blocks"
+		]
+	],
+	"display": {
+		"title": {
+			"text": "Golem Forgemaster"
+		},
+		"description": {
+			"text": "Summon an iron golem and hold 4 iron blocks at once"
+		},
+		"icon": {
+			"id": "minecraft:iron_block"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"sends_telemetry_event": false
+}

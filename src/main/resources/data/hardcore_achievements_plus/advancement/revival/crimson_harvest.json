@@ -1,0 +1,50 @@
+{
+	"parent": "hardcore_achievements_plus:revival/tier_3",
+	"criteria": {
+		"fungi": {
+			"conditions": {
+				"items": [
+					{
+						"items": "minecraft:crimson_stem",
+						"count": {
+							"min": 16
+						}
+					},
+					{
+						"items": "minecraft:warped_stem",
+						"count": {
+							"min": 16
+						}
+					},
+					{
+						"items": "minecraft:shroomlight",
+						"count": {
+							"min": 8
+						}
+					}
+				]
+			},
+			"trigger": "minecraft:inventory_changed"
+		}
+	},
+	"requirements": [
+		[
+			"fungi"
+		]
+	],
+	"display": {
+		"title": {
+			"text": "Crimson Harvest"
+		},
+		"description": {
+			"text": "Hold 16 crimson stems, 16 warped stems and 8 shroomlights at once"
+		},
+		"icon": {
+			"id": "minecraft:shroomlight"
+		},
+		"frame": "goal",
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"sends_telemetry_event": false
+}

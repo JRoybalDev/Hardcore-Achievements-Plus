@@ -1,0 +1,55 @@
+{
+	"parent": "hardcore_achievements_plus:revival/tier_3",
+	"criteria": {
+		"kill_ghast": {
+			"conditions": {
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"minecraft:entity_type": "minecraft:ghast"
+						}
+					}
+				]
+			},
+			"trigger": "minecraft:player_killed_entity"
+		},
+		"tears": {
+			"conditions": {
+				"items": [
+					{
+						"items": "minecraft:ghast_tear",
+						"count": {
+							"min": 2
+						}
+					}
+				]
+			},
+			"trigger": "minecraft:inventory_changed"
+		}
+	},
+	"requirements": [
+		[
+			"kill_ghast"
+		],
+		[
+			"tears"
+		]
+	],
+	"display": {
+		"title": {
+			"text": "Tears of the Sky"
+		},
+		"description": {
+			"text": "Kill a ghast and hold 2 ghast tears at once"
+		},
+		"icon": {
+			"id": "minecraft:ghast_tear"
+		},
+		"frame": "goal",
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"sends_telemetry_event": false
+}

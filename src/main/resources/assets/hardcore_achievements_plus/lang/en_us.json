@@ -1,0 +1,32 @@
+{
+	"key.hardcore_achievements_plus.panel": "Open Revival Achievements",
+
+	"hardcore_achievements_plus.chat.assigned": "%s has fallen! Complete the revival achievement %s to bring them back: %s",
+	"hardcore_achievements_plus.chat.completed": "%s completed the revival achievement %s!",
+	"hardcore_achievements_plus.chat.revived": "%s has been revived!",
+	"hardcore_achievements_plus.chat.game_over": "All players have fallen. The world's fate now rests on whoever joins next...",
+
+	"hardcore_achievements_plus.command.restore_on": "Inventory restore enabled: fallen players' items are saved at death and returned on revival",
+	"hardcore_achievements_plus.command.restore_off": "Inventory restore disabled: items drop where players die",
+	"hardcore_achievements_plus.command.status_restore": "Inventory restore: %s",
+	"hardcore_achievements_plus.command.on": "on",
+	"hardcore_achievements_plus.command.off": "off",
+	"hardcore_achievements_plus.command.status_no_pending": "No pending revivals",
+	"hardcore_achievements_plus.command.status_pending": "%s awaits revival: %s",
+
+	"hardcore_achievements_plus.toast.title": "Revival Achievement!",
+	"hardcore_achievements_plus.toast.body": "%s — revives %s",
+
+	"hardcore_achievements_plus.panel.title": "Revival Achievements",
+	"hardcore_achievements_plus.panel.active": "Active",
+	"hardcore_achievements_plus.panel.upcoming": "Available",
+	"hardcore_achievements_plus.panel.completed": "Completed",
+	"hardcore_achievements_plus.panel.no_active": "No revivals pending",
+	"hardcore_achievements_plus.panel.no_upcoming": "No revival achievements available",
+	"hardcore_achievements_plus.panel.no_completed": "No revival achievements completed yet",
+	"hardcore_achievements_plus.panel.tier": "Tier %s",
+	"hardcore_achievements_plus.panel.locked": "Locked",
+	"hardcore_achievements_plus.panel.revives": "Revives %s",
+	"hardcore_achievements_plus.panel.repeatable": "Repeatable",
+	"hardcore_achievements_plus.panel.completed_by": "by %s — %s"
+}

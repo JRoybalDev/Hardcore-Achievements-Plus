@@ -1,0 +1,38 @@
+{
+	"parent": "hardcore_achievements_plus:revival/tier_0",
+	"criteria": {
+		"cod": {
+			"conditions": {
+				"items": [
+					{
+						"items": "minecraft:cod",
+						"count": {
+							"min": 8
+						}
+					}
+				]
+			},
+			"trigger": "minecraft:inventory_changed"
+		}
+	},
+	"requirements": [
+		[
+			"cod"
+		]
+	],
+	"display": {
+		"title": {
+			"text": "Patience of the Angler"
+		},
+		"description": {
+			"text": "Hold 8 raw cod at once"
+		},
+		"icon": {
+			"id": "minecraft:cod"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"sends_telemetry_event": false
+}

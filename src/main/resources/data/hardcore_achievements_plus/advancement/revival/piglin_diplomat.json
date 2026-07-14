@@ -1,0 +1,200 @@
+{
+	"parent": "hardcore_achievements_plus:revival/tier_3",
+	"criteria": {
+		"distract_piglin": {
+			"conditions": {
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"minecraft:entity_type": "minecraft:piglin",
+							"minecraft:flags": {
+								"is_baby": false
+							}
+						}
+					}
+				],
+				"item": {
+					"items": "#minecraft:piglin_loved"
+				},
+				"player": [
+					{
+						"condition": "minecraft:inverted",
+						"term": {
+							"condition": "minecraft:entity_properties",
+							"entity": "this",
+							"predicate": {
+								"minecraft:equipment": {
+									"head": {
+										"items": "#minecraft:piglin_safe_armor"
+									}
+								}
+							}
+						}
+					},
+					{
+						"condition": "minecraft:inverted",
+						"term": {
+							"condition": "minecraft:entity_properties",
+							"entity": "this",
+							"predicate": {
+								"minecraft:equipment": {
+									"chest": {
+										"items": "#minecraft:piglin_safe_armor"
+									}
+								}
+							}
+						}
+					},
+					{
+						"condition": "minecraft:inverted",
+						"term": {
+							"condition": "minecraft:entity_properties",
+							"entity": "this",
+							"predicate": {
+								"minecraft:equipment": {
+									"legs": {
+										"items": "#minecraft:piglin_safe_armor"
+									}
+								}
+							}
+						}
+					},
+					{
+						"condition": "minecraft:inverted",
+						"term": {
+							"condition": "minecraft:entity_properties",
+							"entity": "this",
+							"predicate": {
+								"minecraft:equipment": {
+									"feet": {
+										"items": "#minecraft:piglin_safe_armor"
+									}
+								}
+							}
+						}
+					}
+				]
+			},
+			"trigger": "minecraft:thrown_item_picked_up_by_entity"
+		},
+		"distract_piglin_directly": {
+			"conditions": {
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"minecraft:entity_type": "minecraft:piglin",
+							"minecraft:flags": {
+								"is_baby": false
+							}
+						}
+					}
+				],
+				"item": {
+					"items": "minecraft:gold_ingot"
+				},
+				"player": [
+					{
+						"condition": "minecraft:inverted",
+						"term": {
+							"condition": "minecraft:entity_properties",
+							"entity": "this",
+							"predicate": {
+								"minecraft:equipment": {
+									"head": {
+										"items": "#minecraft:piglin_safe_armor"
+									}
+								}
+							}
+						}
+					},
+					{
+						"condition": "minecraft:inverted",
+						"term": {
+							"condition": "minecraft:entity_properties",
+							"entity": "this",
+							"predicate": {
+								"minecraft:equipment": {
+									"chest": {
+										"items": "#minecraft:piglin_safe_armor"
+									}
+								}
+							}
+						}
+					},
+					{
+						"condition": "minecraft:inverted",
+						"term": {
+							"condition": "minecraft:entity_properties",
+							"entity": "this",
+							"predicate": {
+								"minecraft:equipment": {
+									"legs": {
+										"items": "#minecraft:piglin_safe_armor"
+									}
+								}
+							}
+						}
+					},
+					{
+						"condition": "minecraft:inverted",
+						"term": {
+							"condition": "minecraft:entity_properties",
+							"entity": "this",
+							"predicate": {
+								"minecraft:equipment": {
+									"feet": {
+										"items": "#minecraft:piglin_safe_armor"
+									}
+								}
+							}
+						}
+					}
+				]
+			},
+			"trigger": "minecraft:player_interacted_with_entity"
+		},
+		"gold": {
+			"conditions": {
+				"items": [
+					{
+						"items": "minecraft:gold_ingot",
+						"count": {
+							"min": 16
+						}
+					}
+				]
+			},
+			"trigger": "minecraft:inventory_changed"
+		}
+	},
+	"requirements": [
+		[
+			"distract_piglin"
+		],
+		[
+			"distract_piglin_directly"
+		],
+		[
+			"gold"
+		]
+	],
+	"display": {
+		"title": {
+			"text": "Piglin Diplomat"
+		},
+		"description": {
+			"text": "Distract a piglin with gold and hold 16 gold ingots at once"
+		},
+		"icon": {
+			"id": "minecraft:gold_ingot"
+		},
+		"frame": "goal",
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"sends_telemetry_event": false
+}

@@ -1,0 +1,38 @@
+{
+	"parent": "hardcore_achievements_plus:revival/tier_3",
+	"criteria": {
+		"debris": {
+			"conditions": {
+				"items": [
+					{
+						"items": "minecraft:ancient_debris",
+						"count": {
+							"min": 4
+						}
+					}
+				]
+			},
+			"trigger": "minecraft:inventory_changed"
+		}
+	},
+	"requirements": [
+		[
+			"debris"
+		]
+	],
+	"display": {
+		"title": {
+			"text": "Netherite Prospector"
+		},
+		"description": {
+			"text": "Hold 4 ancient debris at once"
+		},
+		"icon": {
+			"id": "minecraft:ancient_debris"
+		},
+		"frame": "goal",
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"sends_telemetry_event": false
+}

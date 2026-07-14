@@ -1,0 +1,44 @@
+{
+	"parent": "hardcore_achievements_plus:revival/tier_0",
+	"criteria": {
+		"armor": {
+			"conditions": {
+				"items": [
+					{
+						"items": "minecraft:iron_helmet"
+					},
+					{
+						"items": "minecraft:iron_chestplate"
+					},
+					{
+						"items": "minecraft:iron_leggings"
+					},
+					{
+						"items": "minecraft:iron_boots"
+					}
+				]
+			},
+			"trigger": "minecraft:inventory_changed"
+		}
+	},
+	"requirements": [
+		[
+			"armor"
+		]
+	],
+	"display": {
+		"title": {
+			"text": "Iron Curtain"
+		},
+		"description": {
+			"text": "Hold a full set of iron armor at once"
+		},
+		"icon": {
+			"id": "minecraft:iron_chestplate"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"sends_telemetry_event": false
+}

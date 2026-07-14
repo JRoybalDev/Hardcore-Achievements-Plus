@@ -1,0 +1,28 @@
+{
+	"criteria": {
+		"always": {
+			"trigger": "minecraft:tick"
+		}
+	},
+	"requirements": [
+		[
+			"always"
+		]
+	],
+	"display": {
+		"title": {
+			"text": "Revival Achievements"
+		},
+		"description": {
+			"text": "Bring your fallen friends back from the dead"
+		},
+		"icon": {
+			"id": "minecraft:totem_of_undying"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"background": "minecraft:gui/advancements/backgrounds/nether"
+	},
+	"sends_telemetry_event": false
+}

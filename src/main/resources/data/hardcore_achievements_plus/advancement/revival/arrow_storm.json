@@ -1,0 +1,41 @@
+{
+	"parent": "hardcore_achievements_plus:revival/tier_1",
+	"criteria": {
+		"arsenal": {
+			"conditions": {
+				"items": [
+					{
+						"items": "minecraft:bow"
+					},
+					{
+						"items": "minecraft:arrow",
+						"count": {
+							"min": 64
+						}
+					}
+				]
+			},
+			"trigger": "minecraft:inventory_changed"
+		}
+	},
+	"requirements": [
+		[
+			"arsenal"
+		]
+	],
+	"display": {
+		"title": {
+			"text": "Arrow Storm"
+		},
+		"description": {
+			"text": "Hold a bow and a full stack of 64 arrows at once"
+		},
+		"icon": {
+			"id": "minecraft:bow"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"sends_telemetry_event": false
+}

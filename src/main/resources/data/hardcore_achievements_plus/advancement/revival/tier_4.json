@@ -1,0 +1,28 @@
+{
+	"parent": "hardcore_achievements_plus:revival/tier_3",
+	"criteria": {
+		"always": {
+			"trigger": "minecraft:tick"
+		}
+	},
+	"requirements": [
+		[
+			"always"
+		]
+	],
+	"display": {
+		"title": {
+			"text": "Tier 4 \u2014 Inferno"
+		},
+		"description": {
+			"text": "Revivals worthy of the End"
+		},
+		"icon": {
+			"id": "minecraft:end_stone"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"sends_telemetry_event": false
+}

@@ -1,0 +1,38 @@
+{
+	"parent": "hardcore_achievements_plus:revival/tier_0",
+	"criteria": {
+		"charcoal": {
+			"conditions": {
+				"items": [
+					{
+						"items": "minecraft:charcoal",
+						"count": {
+							"min": 32
+						}
+					}
+				]
+			},
+			"trigger": "minecraft:inventory_changed"
+		}
+	},
+	"requirements": [
+		[
+			"charcoal"
+		]
+	],
+	"display": {
+		"title": {
+			"text": "Charcoal Burner"
+		},
+		"description": {
+			"text": "Smelt and hold 32 charcoal at once"
+		},
+		"icon": {
+			"id": "minecraft:charcoal"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"sends_telemetry_event": false
+}

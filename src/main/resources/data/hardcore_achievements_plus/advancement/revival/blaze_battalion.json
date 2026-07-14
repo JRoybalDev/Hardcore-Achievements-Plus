@@ -1,0 +1,73 @@
+{
+	"parent": "hardcore_achievements_plus:revival/tier_3",
+	"criteria": {
+		"kill_blaze": {
+			"conditions": {
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"minecraft:entity_type": "minecraft:blaze"
+						}
+					}
+				]
+			},
+			"trigger": "minecraft:player_killed_entity"
+		},
+		"kill_wither_skeleton": {
+			"conditions": {
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"minecraft:entity_type": "minecraft:wither_skeleton"
+						}
+					}
+				]
+			},
+			"trigger": "minecraft:player_killed_entity"
+		},
+		"kill_ghast": {
+			"conditions": {
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"minecraft:entity_type": "minecraft:ghast"
+						}
+					}
+				]
+			},
+			"trigger": "minecraft:player_killed_entity"
+		}
+	},
+	"requirements": [
+		[
+			"kill_blaze"
+		],
+		[
+			"kill_wither_skeleton"
+		],
+		[
+			"kill_ghast"
+		]
+	],
+	"display": {
+		"title": {
+			"text": "Blaze Battalion"
+		},
+		"description": {
+			"text": "Slay a blaze, a wither skeleton and a ghast"
+		},
+		"icon": {
+			"id": "minecraft:blaze_powder"
+		},
+		"frame": "goal",
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"sends_telemetry_event": false
+}

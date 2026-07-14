@@ -1,0 +1,47 @@
+{
+	"parent": "hardcore_achievements_plus:revival/tier_0",
+	"criteria": {
+		"full_kit": {
+			"conditions": {
+				"items": [
+					{
+						"items": "minecraft:stone_sword"
+					},
+					{
+						"items": "minecraft:stone_pickaxe"
+					},
+					{
+						"items": "minecraft:stone_axe"
+					},
+					{
+						"items": "minecraft:stone_shovel"
+					},
+					{
+						"items": "minecraft:stone_hoe"
+					}
+				]
+			},
+			"trigger": "minecraft:inventory_changed"
+		}
+	},
+	"requirements": [
+		[
+			"full_kit"
+		]
+	],
+	"display": {
+		"title": {
+			"text": "Stone Age Arsenal"
+		},
+		"description": {
+			"text": "Hold a full set of stone tools at once: sword, pickaxe, axe, shovel and hoe"
+		},
+		"icon": {
+			"id": "minecraft:stone_pickaxe"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"sends_telemetry_event": false
+}

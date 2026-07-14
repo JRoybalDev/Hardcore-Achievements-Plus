@@ -1,0 +1,38 @@
+{
+	"parent": "hardcore_achievements_plus:revival/tier_0",
+	"criteria": {
+		"bread": {
+			"conditions": {
+				"items": [
+					{
+						"items": "minecraft:bread",
+						"count": {
+							"min": 32
+						}
+					}
+				]
+			},
+			"trigger": "minecraft:inventory_changed"
+		}
+	},
+	"requirements": [
+		[
+			"bread"
+		]
+	],
+	"display": {
+		"title": {
+			"text": "Harvest Feast"
+		},
+		"description": {
+			"text": "Bake and hold 32 bread at once"
+		},
+		"icon": {
+			"id": "minecraft:bread"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"sends_telemetry_event": false
+}

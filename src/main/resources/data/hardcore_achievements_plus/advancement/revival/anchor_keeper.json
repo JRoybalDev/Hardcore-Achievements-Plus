@@ -1,0 +1,41 @@
+{
+	"parent": "hardcore_achievements_plus:revival/tier_3",
+	"criteria": {
+		"anchor": {
+			"conditions": {
+				"items": [
+					{
+						"items": "minecraft:respawn_anchor"
+					},
+					{
+						"items": "minecraft:glowstone",
+						"count": {
+							"min": 8
+						}
+					}
+				]
+			},
+			"trigger": "minecraft:inventory_changed"
+		}
+	},
+	"requirements": [
+		[
+			"anchor"
+		]
+	],
+	"display": {
+		"title": {
+			"text": "Anchor Keeper"
+		},
+		"description": {
+			"text": "Hold a respawn anchor and 8 glowstone blocks at once"
+		},
+		"icon": {
+			"id": "minecraft:respawn_anchor"
+		},
+		"frame": "goal",
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"sends_telemetry_event": false
+}

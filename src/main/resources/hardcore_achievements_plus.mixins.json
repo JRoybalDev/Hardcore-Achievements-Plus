@@ -3,7 +3,7 @@
 	"package": "com.xcusestudios.hardcoreachievementsplus.mixin",
 	"compatibilityLevel": "JAVA_25",
 	"mixins": [
-		"MinecraftServerMixin"
+		"PlayerAdvancementsMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

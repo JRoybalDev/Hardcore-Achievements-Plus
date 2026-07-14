@@ -1,0 +1,44 @@
+{
+	"parent": "hardcore_achievements_plus:revival/tier_4",
+	"criteria": {
+		"chorus": {
+			"conditions": {
+				"items": [
+					{
+						"items": "minecraft:chorus_fruit",
+						"count": {
+							"min": 32
+						}
+					},
+					{
+						"items": "minecraft:purpur_block",
+						"count": {
+							"min": 16
+						}
+					}
+				]
+			},
+			"trigger": "minecraft:inventory_changed"
+		}
+	},
+	"requirements": [
+		[
+			"chorus"
+		]
+	],
+	"display": {
+		"title": {
+			"text": "End Gardener"
+		},
+		"description": {
+			"text": "Hold 32 chorus fruit and 16 purpur blocks at once"
+		},
+		"icon": {
+			"id": "minecraft:chorus_fruit"
+		},
+		"frame": "goal",
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"sends_telemetry_event": false
+}

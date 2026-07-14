@@ -1,0 +1,44 @@
+{
+	"parent": "hardcore_achievements_plus:revival/tier_1",
+	"criteria": {
+		"gold": {
+			"conditions": {
+				"items": [
+					{
+						"items": "minecraft:gold_ingot",
+						"count": {
+							"min": 16
+						}
+					},
+					{
+						"items": "minecraft:golden_carrot",
+						"count": {
+							"min": 8
+						}
+					}
+				]
+			},
+			"trigger": "minecraft:inventory_changed"
+		}
+	},
+	"requirements": [
+		[
+			"gold"
+		]
+	],
+	"display": {
+		"title": {
+			"text": "Golden Harvest"
+		},
+		"description": {
+			"text": "Hold 16 gold ingots and 8 golden carrots at once"
+		},
+		"icon": {
+			"id": "minecraft:golden_carrot"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"sends_telemetry_event": false
+}

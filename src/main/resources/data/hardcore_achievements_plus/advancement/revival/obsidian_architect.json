@@ -1,0 +1,38 @@
+{
+	"parent": "hardcore_achievements_plus:revival/tier_2",
+	"criteria": {
+		"obsidian": {
+			"conditions": {
+				"items": [
+					{
+						"items": "minecraft:obsidian",
+						"count": {
+							"min": 16
+						}
+					}
+				]
+			},
+			"trigger": "minecraft:inventory_changed"
+		}
+	},
+	"requirements": [
+		[
+			"obsidian"
+		]
+	],
+	"display": {
+		"title": {
+			"text": "Obsidian Architect"
+		},
+		"description": {
+			"text": "Mine and hold 16 obsidian at once"
+		},
+		"icon": {
+			"id": "minecraft:obsidian"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"sends_telemetry_event": false
+}

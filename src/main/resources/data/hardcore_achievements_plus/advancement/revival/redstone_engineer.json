@@ -1,0 +1,50 @@
+{
+	"parent": "hardcore_achievements_plus:revival/tier_2",
+	"criteria": {
+		"components": {
+			"conditions": {
+				"items": [
+					{
+						"items": "minecraft:observer",
+						"count": {
+							"min": 8
+						}
+					},
+					{
+						"items": "minecraft:piston",
+						"count": {
+							"min": 8
+						}
+					},
+					{
+						"items": "minecraft:redstone",
+						"count": {
+							"min": 64
+						}
+					}
+				]
+			},
+			"trigger": "minecraft:inventory_changed"
+		}
+	},
+	"requirements": [
+		[
+			"components"
+		]
+	],
+	"display": {
+		"title": {
+			"text": "Redstone Engineer"
+		},
+		"description": {
+			"text": "Hold 8 observers, 8 pistons and 64 redstone dust at once"
+		},
+		"icon": {
+			"id": "minecraft:piston"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"sends_telemetry_event": false
+}

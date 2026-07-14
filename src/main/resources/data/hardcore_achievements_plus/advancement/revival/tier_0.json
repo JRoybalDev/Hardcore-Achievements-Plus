@@ -1,0 +1,28 @@
+{
+	"parent": "hardcore_achievements_plus:revival/root",
+	"criteria": {
+		"always": {
+			"trigger": "minecraft:tick"
+		}
+	},
+	"requirements": [
+		[
+			"always"
+		]
+	],
+	"display": {
+		"title": {
+			"text": "Tier 0 \u2014 Embers"
+		},
+		"description": {
+			"text": "Revivals anyone can attempt, bare-handed if need be"
+		},
+		"icon": {
+			"id": "minecraft:oak_planks"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"sends_telemetry_event": false
+}

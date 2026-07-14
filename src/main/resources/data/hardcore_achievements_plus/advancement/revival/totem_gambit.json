@@ -1,0 +1,33 @@
+{
+	"parent": "hardcore_achievements_plus:revival/tier_4",
+	"criteria": {
+		"used_totem": {
+			"conditions": {
+				"item": {
+					"items": "minecraft:totem_of_undying"
+				}
+			},
+			"trigger": "minecraft:used_totem"
+		}
+	},
+	"requirements": [
+		[
+			"used_totem"
+		]
+	],
+	"display": {
+		"title": {
+			"text": "Totem Gambit"
+		},
+		"description": {
+			"text": "Cheat death with a totem of undying \u2014 trade your spare life for theirs"
+		},
+		"icon": {
+			"id": "minecraft:totem_of_undying"
+		},
+		"frame": "goal",
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"sends_telemetry_event": false
+}

@@ -4,6 +4,13 @@ import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.resources.Identifier;
 
+import com.xcusestudios.hardcoreachievementsplus.command.HapCommands;
+import com.xcusestudios.hardcoreachievementsplus.def.AchievementLoader;
+import com.xcusestudios.hardcoreachievementsplus.logic.CompletionHandler;
+import com.xcusestudios.hardcoreachievementsplus.logic.DeathHandler;
+import com.xcusestudios.hardcoreachievementsplus.logic.Reviver;
+import com.xcusestudios.hardcoreachievementsplus.net.SyncPayloads;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -17,11 +24,12 @@ public class HardcoreAchievementsPlus implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		// This code runs as soon as Minecraft is in a mod-load-ready state.
-		// However, some things (like resources) may still be uninitialized.
-		// Proceed with mild caution.
-
-		LOGGER.info("Hello Fabric world!");
+		AchievementLoader.bootstrap();
+		SyncPayloads.register();
+		DeathHandler.register();
+		CompletionHandler.register();
+		Reviver.register();
+		HapCommands.register();
 	}
 
 	public static Identifier id(String path) {

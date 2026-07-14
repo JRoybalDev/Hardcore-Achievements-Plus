@@ -1,0 +1,50 @@
+{
+	"parent": "hardcore_achievements_plus:revival/tier_1",
+	"criteria": {
+		"haul": {
+			"conditions": {
+				"items": [
+					{
+						"items": "minecraft:coal",
+						"count": {
+							"min": 32
+						}
+					},
+					{
+						"items": "minecraft:redstone",
+						"count": {
+							"min": 16
+						}
+					},
+					{
+						"items": "minecraft:lapis_lazuli",
+						"count": {
+							"min": 16
+						}
+					}
+				]
+			},
+			"trigger": "minecraft:inventory_changed"
+		}
+	},
+	"requirements": [
+		[
+			"haul"
+		]
+	],
+	"display": {
+		"title": {
+			"text": "Spelunker's Haul"
+		},
+		"description": {
+			"text": "Hold 32 coal, 16 redstone dust and 16 lapis lazuli at once"
+		},
+		"icon": {
+			"id": "minecraft:lapis_lazuli"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"sends_telemetry_event": false
+}

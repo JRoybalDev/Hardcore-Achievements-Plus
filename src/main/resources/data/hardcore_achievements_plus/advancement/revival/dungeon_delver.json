@@ -1,0 +1,38 @@
+{
+	"parent": "hardcore_achievements_plus:revival/tier_2",
+	"criteria": {
+		"loot": {
+			"conditions": {
+				"items": [
+					{
+						"items": "minecraft:saddle"
+					},
+					{
+						"items": "minecraft:name_tag"
+					}
+				]
+			},
+			"trigger": "minecraft:inventory_changed"
+		}
+	},
+	"requirements": [
+		[
+			"loot"
+		]
+	],
+	"display": {
+		"title": {
+			"text": "Dungeon Delver"
+		},
+		"description": {
+			"text": "Hold a saddle and a name tag at once \u2014 loot only found in the world's depths"
+		},
+		"icon": {
+			"id": "minecraft:name_tag"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"sends_telemetry_event": false
+}

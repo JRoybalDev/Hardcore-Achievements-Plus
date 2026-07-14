@@ -1,0 +1,90 @@
+{
+	"parent": "hardcore_achievements_plus:revival/tier_1",
+	"criteria": {
+		"breed_cow": {
+			"conditions": {
+				"child": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"minecraft:entity_type": "minecraft:cow"
+						}
+					}
+				]
+			},
+			"trigger": "minecraft:bred_animals"
+		},
+		"breed_sheep": {
+			"conditions": {
+				"child": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"minecraft:entity_type": "minecraft:sheep"
+						}
+					}
+				]
+			},
+			"trigger": "minecraft:bred_animals"
+		},
+		"breed_pig": {
+			"conditions": {
+				"child": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"minecraft:entity_type": "minecraft:pig"
+						}
+					}
+				]
+			},
+			"trigger": "minecraft:bred_animals"
+		},
+		"breed_chicken": {
+			"conditions": {
+				"child": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"minecraft:entity_type": "minecraft:chicken"
+						}
+					}
+				]
+			},
+			"trigger": "minecraft:bred_animals"
+		}
+	},
+	"requirements": [
+		[
+			"breed_cow"
+		],
+		[
+			"breed_sheep"
+		],
+		[
+			"breed_pig"
+		],
+		[
+			"breed_chicken"
+		]
+	],
+	"display": {
+		"title": {
+			"text": "Menagerie Keeper"
+		},
+		"description": {
+			"text": "Breed a cow, a sheep, a pig and a chicken"
+		},
+		"icon": {
+			"id": "minecraft:wheat"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"sends_telemetry_event": false
+}

@@ -1,0 +1,39 @@
+{
+	"parent": "hardcore_achievements_plus:revival/tier_4",
+	"criteria": {
+		"kill_wither": {
+			"conditions": {
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"minecraft:entity_type": "minecraft:wither"
+						}
+					}
+				]
+			},
+			"trigger": "minecraft:player_killed_entity"
+		}
+	},
+	"requirements": [
+		[
+			"kill_wither"
+		]
+	],
+	"display": {
+		"title": {
+			"text": "Wither Reaper"
+		},
+		"description": {
+			"text": "Summon and destroy the Wither"
+		},
+		"icon": {
+			"id": "minecraft:wither_skeleton_skull"
+		},
+		"frame": "challenge",
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"sends_telemetry_event": false
+}

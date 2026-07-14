@@ -1,0 +1,44 @@
+{
+	"parent": "hardcore_achievements_plus:revival/tier_2",
+	"criteria": {
+		"honey": {
+			"conditions": {
+				"items": [
+					{
+						"items": "minecraft:honeycomb",
+						"count": {
+							"min": 8
+						}
+					},
+					{
+						"items": "minecraft:honey_bottle",
+						"count": {
+							"min": 4
+						}
+					}
+				]
+			},
+			"trigger": "minecraft:inventory_changed"
+		}
+	},
+	"requirements": [
+		[
+			"honey"
+		]
+	],
+	"display": {
+		"title": {
+			"text": "Master Apiarist"
+		},
+		"description": {
+			"text": "Hold 8 honeycomb and 4 honey bottles at once"
+		},
+		"icon": {
+			"id": "minecraft:honeycomb"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"sends_telemetry_event": false
+}

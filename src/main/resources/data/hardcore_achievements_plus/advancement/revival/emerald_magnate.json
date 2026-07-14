@@ -1,0 +1,44 @@
+{
+	"parent": "hardcore_achievements_plus:revival/tier_2",
+	"criteria": {
+		"traded": {
+			"trigger": "minecraft:villager_trade"
+		},
+		"emeralds": {
+			"conditions": {
+				"items": [
+					{
+						"items": "minecraft:emerald",
+						"count": {
+							"min": 16
+						}
+					}
+				]
+			},
+			"trigger": "minecraft:inventory_changed"
+		}
+	},
+	"requirements": [
+		[
+			"traded"
+		],
+		[
+			"emeralds"
+		]
+	],
+	"display": {
+		"title": {
+			"text": "Emerald Magnate"
+		},
+		"description": {
+			"text": "Trade with a villager and hold 16 emeralds at once"
+		},
+		"icon": {
+			"id": "minecraft:emerald"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"sends_telemetry_event": false
+}

@@ -1,0 +1,33 @@
+{
+	"parent": "hardcore_achievements_plus:revival/tier_4",
+	"criteria": {
+		"beacon": {
+			"conditions": {
+				"level": {
+					"min": 4
+				}
+			},
+			"trigger": "minecraft:construct_beacon"
+		}
+	},
+	"requirements": [
+		[
+			"beacon"
+		]
+	],
+	"display": {
+		"title": {
+			"text": "Full Spectrum"
+		},
+		"description": {
+			"text": "Construct a full-power (level 4) beacon pyramid"
+		},
+		"icon": {
+			"id": "minecraft:beacon"
+		},
+		"frame": "challenge",
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"sends_telemetry_event": false
+}

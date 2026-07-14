@@ -1,0 +1,41 @@
+{
+	"parent": "hardcore_achievements_plus:revival/tier_3",
+	"criteria": {
+		"brewed": {
+			"trigger": "minecraft:brewed_potion"
+		},
+		"tear": {
+			"conditions": {
+				"items": [
+					{
+						"items": "minecraft:ghast_tear"
+					}
+				]
+			},
+			"trigger": "minecraft:inventory_changed"
+		}
+	},
+	"requirements": [
+		[
+			"brewed"
+		],
+		[
+			"tear"
+		]
+	],
+	"display": {
+		"title": {
+			"text": "Potion Master"
+		},
+		"description": {
+			"text": "Brew a potion and hold a ghast tear at once"
+		},
+		"icon": {
+			"id": "minecraft:brewing_stand"
+		},
+		"frame": "goal",
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"sends_telemetry_event": false
+}

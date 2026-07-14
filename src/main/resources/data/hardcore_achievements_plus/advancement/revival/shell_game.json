@@ -1,0 +1,38 @@
+{
+	"parent": "hardcore_achievements_plus:revival/tier_4",
+	"criteria": {
+		"shells": {
+			"conditions": {
+				"items": [
+					{
+						"items": "minecraft:shulker_shell",
+						"count": {
+							"min": 4
+						}
+					}
+				]
+			},
+			"trigger": "minecraft:inventory_changed"
+		}
+	},
+	"requirements": [
+		[
+			"shells"
+		]
+	],
+	"display": {
+		"title": {
+			"text": "Shell Game"
+		},
+		"description": {
+			"text": "Hold 4 shulker shells at once"
+		},
+		"icon": {
+			"id": "minecraft:shulker_shell"
+		},
+		"frame": "goal",
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"sends_telemetry_event": false
+}

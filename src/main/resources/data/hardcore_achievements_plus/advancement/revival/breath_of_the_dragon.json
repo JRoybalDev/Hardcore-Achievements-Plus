@@ -1,0 +1,38 @@
+{
+	"parent": "hardcore_achievements_plus:revival/tier_4",
+	"criteria": {
+		"breath": {
+			"conditions": {
+				"items": [
+					{
+						"items": "minecraft:dragon_breath",
+						"count": {
+							"min": 4
+						}
+					}
+				]
+			},
+			"trigger": "minecraft:inventory_changed"
+		}
+	},
+	"requirements": [
+		[
+			"breath"
+		]
+	],
+	"display": {
+		"title": {
+			"text": "Breath of the Dragon"
+		},
+		"description": {
+			"text": "Bottle 4 dragon's breath"
+		},
+		"icon": {
+			"id": "minecraft:dragon_breath"
+		},
+		"frame": "goal",
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"sends_telemetry_event": false
+}

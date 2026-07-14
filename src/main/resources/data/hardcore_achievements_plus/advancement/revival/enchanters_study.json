@@ -1,0 +1,44 @@
+{
+	"parent": "hardcore_achievements_plus:revival/tier_2",
+	"criteria": {
+		"enchanted": {
+			"trigger": "minecraft:enchanted_item"
+		},
+		"bookshelves": {
+			"conditions": {
+				"items": [
+					{
+						"items": "minecraft:bookshelf",
+						"count": {
+							"min": 8
+						}
+					}
+				]
+			},
+			"trigger": "minecraft:inventory_changed"
+		}
+	},
+	"requirements": [
+		[
+			"enchanted"
+		],
+		[
+			"bookshelves"
+		]
+	],
+	"display": {
+		"title": {
+			"text": "Enchanter's Study"
+		},
+		"description": {
+			"text": "Enchant an item and hold 8 bookshelves at once"
+		},
+		"icon": {
+			"id": "minecraft:enchanting_table"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"sends_telemetry_event": false
+}

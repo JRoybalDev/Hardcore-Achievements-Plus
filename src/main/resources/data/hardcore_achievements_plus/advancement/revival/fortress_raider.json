@@ -1,0 +1,61 @@
+{
+	"parent": "hardcore_achievements_plus:revival/tier_3",
+	"criteria": {
+		"kill_wither_skeleton": {
+			"conditions": {
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"minecraft:entity_type": "minecraft:wither_skeleton"
+						}
+					}
+				]
+			},
+			"trigger": "minecraft:player_killed_entity"
+		},
+		"plunder": {
+			"conditions": {
+				"items": [
+					{
+						"items": "minecraft:nether_wart",
+						"count": {
+							"min": 8
+						}
+					},
+					{
+						"items": "minecraft:blaze_rod",
+						"count": {
+							"min": 8
+						}
+					}
+				]
+			},
+			"trigger": "minecraft:inventory_changed"
+		}
+	},
+	"requirements": [
+		[
+			"kill_wither_skeleton"
+		],
+		[
+			"plunder"
+		]
+	],
+	"display": {
+		"title": {
+			"text": "Fortress Raider"
+		},
+		"description": {
+			"text": "Kill a wither skeleton and hold 8 nether wart and 8 blaze rods at once"
+		},
+		"icon": {
+			"id": "minecraft:nether_wart"
+		},
+		"frame": "goal",
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"sends_telemetry_event": false
+}

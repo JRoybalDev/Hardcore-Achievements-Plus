@@ -1,0 +1,582 @@
+[
+	{
+		"id": "stone_age_arsenal",
+		"title": "Stone Age Arsenal",
+		"description": "Hold a full set of stone tools at once: sword, pickaxe, axe, shovel and hoe",
+		"icon": "minecraft:stone_pickaxe",
+		"repeatable": true,
+		"tier": 0,
+		"requires": [],
+		"backing_advancement": "hardcore_achievements_plus:revival/stone_age_arsenal"
+	},
+	{
+		"id": "torch_lighter",
+		"title": "Light the Way",
+		"description": "Hold a full stack of 64 torches at once",
+		"icon": "minecraft:torch",
+		"repeatable": true,
+		"tier": 0,
+		"requires": [],
+		"backing_advancement": "hardcore_achievements_plus:revival/torch_lighter"
+	},
+	{
+		"id": "night_watch",
+		"title": "Night Watch",
+		"description": "Slay a zombie, a skeleton, a spider and a creeper",
+		"icon": "minecraft:wooden_sword",
+		"repeatable": true,
+		"tier": 0,
+		"requires": [],
+		"backing_advancement": "hardcore_achievements_plus:revival/night_watch"
+	},
+	{
+		"id": "raw_riches",
+		"title": "Raw Riches",
+		"description": "Hold 16 raw iron, 16 raw copper and 8 raw gold at once",
+		"icon": "minecraft:raw_gold",
+		"repeatable": true,
+		"tier": 0,
+		"requires": [],
+		"backing_advancement": "hardcore_achievements_plus:revival/raw_riches"
+	},
+	{
+		"id": "harvest_feast",
+		"title": "Harvest Feast",
+		"description": "Bake and hold 32 bread at once",
+		"icon": "minecraft:bread",
+		"repeatable": true,
+		"tier": 0,
+		"requires": [],
+		"backing_advancement": "hardcore_achievements_plus:revival/harvest_feast"
+	},
+	{
+		"id": "wool_baron",
+		"title": "Wool Baron",
+		"description": "Hold shears and 32 wool of any color at once",
+		"icon": "minecraft:white_wool",
+		"repeatable": true,
+		"tier": 0,
+		"requires": [],
+		"backing_advancement": "hardcore_achievements_plus:revival/wool_baron"
+	},
+	{
+		"id": "witch_hunter",
+		"title": "Witch Hunter",
+		"description": "Hunt down and kill a witch",
+		"icon": "minecraft:glass_bottle",
+		"repeatable": true,
+		"tier": 0,
+		"requires": [],
+		"backing_advancement": "hardcore_achievements_plus:revival/witch_hunter"
+	},
+	{
+		"id": "charcoal_burner",
+		"title": "Charcoal Burner",
+		"description": "Smelt and hold 32 charcoal at once",
+		"icon": "minecraft:charcoal",
+		"repeatable": true,
+		"tier": 0,
+		"requires": [],
+		"backing_advancement": "hardcore_achievements_plus:revival/charcoal_burner"
+	},
+	{
+		"id": "iron_curtain",
+		"title": "Iron Curtain",
+		"description": "Hold a full set of iron armor at once",
+		"icon": "minecraft:iron_chestplate",
+		"repeatable": true,
+		"tier": 0,
+		"requires": [],
+		"backing_advancement": "hardcore_achievements_plus:revival/iron_curtain"
+	},
+	{
+		"id": "angler_apprentice",
+		"title": "Patience of the Angler",
+		"description": "Hold 8 raw cod at once",
+		"icon": "minecraft:cod",
+		"repeatable": true,
+		"tier": 0,
+		"requires": [],
+		"backing_advancement": "hardcore_achievements_plus:revival/angler_apprentice"
+	},
+	{
+		"id": "spelunkers_haul",
+		"title": "Spelunker's Haul",
+		"description": "Hold 32 coal, 16 redstone dust and 16 lapis lazuli at once",
+		"icon": "minecraft:lapis_lazuli",
+		"repeatable": true,
+		"tier": 1,
+		"requires": [
+			"minecraft:story/iron_tools"
+		],
+		"backing_advancement": "hardcore_achievements_plus:revival/spelunkers_haul"
+	},
+	{
+		"id": "cartographers_eye",
+		"title": "Cartographer's Eye",
+		"description": "Hold a map, a compass and a clock at once",
+		"icon": "minecraft:compass",
+		"repeatable": true,
+		"tier": 1,
+		"requires": [
+			"minecraft:story/smelt_iron"
+		],
+		"backing_advancement": "hardcore_achievements_plus:revival/cartographers_eye"
+	},
+	{
+		"id": "menagerie_keeper",
+		"title": "Menagerie Keeper",
+		"description": "Breed a cow, a sheep, a pig and a chicken",
+		"icon": "minecraft:wheat",
+		"repeatable": true,
+		"tier": 1,
+		"requires": [
+			"minecraft:husbandry/breed_an_animal"
+		],
+		"backing_advancement": "hardcore_achievements_plus:revival/menagerie_keeper"
+	},
+	{
+		"id": "arrow_storm",
+		"title": "Arrow Storm",
+		"description": "Hold a bow and a full stack of 64 arrows at once",
+		"icon": "minecraft:bow",
+		"repeatable": true,
+		"tier": 1,
+		"requires": [
+			"minecraft:adventure/shoot_arrow"
+		],
+		"backing_advancement": "hardcore_achievements_plus:revival/arrow_storm"
+	},
+	{
+		"id": "bone_collector",
+		"title": "Bone Collector",
+		"description": "Hold 32 bones, 16 string and 16 gunpowder at once",
+		"icon": "minecraft:bone",
+		"repeatable": true,
+		"tier": 1,
+		"requires": [
+			"minecraft:adventure/kill_a_mob"
+		],
+		"backing_advancement": "hardcore_achievements_plus:revival/bone_collector"
+	},
+	{
+		"id": "monster_purge",
+		"title": "Monster Purge",
+		"description": "Slay a zombie, a skeleton, a creeper, a spider and a witch",
+		"icon": "minecraft:iron_sword",
+		"repeatable": true,
+		"tier": 1,
+		"requires": [
+			"minecraft:adventure/kill_a_mob"
+		],
+		"backing_advancement": "hardcore_achievements_plus:revival/monster_purge"
+	},
+	{
+		"id": "horse_lord",
+		"title": "Horse Lord",
+		"description": "Tame a horse",
+		"icon": "minecraft:hay_block",
+		"repeatable": true,
+		"tier": 1,
+		"requires": [
+			"minecraft:husbandry/tame_an_animal"
+		],
+		"backing_advancement": "hardcore_achievements_plus:revival/horse_lord"
+	},
+	{
+		"id": "golden_harvest",
+		"title": "Golden Harvest",
+		"description": "Hold 16 gold ingots and 8 golden carrots at once",
+		"icon": "minecraft:golden_carrot",
+		"repeatable": true,
+		"tier": 1,
+		"requires": [
+			"minecraft:story/smelt_iron"
+		],
+		"backing_advancement": "hardcore_achievements_plus:revival/golden_harvest"
+	},
+	{
+		"id": "baker_supreme",
+		"title": "Baker Supreme",
+		"description": "Hold a cake, a pumpkin pie and 16 sugar at once",
+		"icon": "minecraft:cake",
+		"repeatable": true,
+		"tier": 1,
+		"requires": [
+			"minecraft:husbandry/plant_seed"
+		],
+		"backing_advancement": "hardcore_achievements_plus:revival/baker_supreme"
+	},
+	{
+		"id": "nautilus_call",
+		"title": "Call of the Deep",
+		"description": "Obtain a nautilus shell from the drowned or the depths",
+		"icon": "minecraft:nautilus_shell",
+		"repeatable": true,
+		"tier": 1,
+		"requires": [
+			"minecraft:adventure/kill_a_mob"
+		],
+		"backing_advancement": "hardcore_achievements_plus:revival/nautilus_call"
+	},
+	{
+		"id": "diamond_hoard",
+		"title": "Diamond Hoard",
+		"description": "Hold 8 diamonds at once",
+		"icon": "minecraft:diamond",
+		"repeatable": true,
+		"tier": 2,
+		"requires": [
+			"minecraft:story/mine_diamond"
+		],
+		"backing_advancement": "hardcore_achievements_plus:revival/diamond_hoard"
+	},
+	{
+		"id": "enchanters_study",
+		"title": "Enchanter's Study",
+		"description": "Enchant an item and hold 8 bookshelves at once",
+		"icon": "minecraft:enchanting_table",
+		"repeatable": true,
+		"tier": 2,
+		"requires": [
+			"minecraft:story/enchant_item"
+		],
+		"backing_advancement": "hardcore_achievements_plus:revival/enchanters_study"
+	},
+	{
+		"id": "obsidian_architect",
+		"title": "Obsidian Architect",
+		"description": "Mine and hold 16 obsidian at once",
+		"icon": "minecraft:obsidian",
+		"repeatable": true,
+		"tier": 2,
+		"requires": [
+			"minecraft:story/form_obsidian"
+		],
+		"backing_advancement": "hardcore_achievements_plus:revival/obsidian_architect"
+	},
+	{
+		"id": "emerald_magnate",
+		"title": "Emerald Magnate",
+		"description": "Trade with a villager and hold 16 emeralds at once",
+		"icon": "minecraft:emerald",
+		"repeatable": true,
+		"tier": 2,
+		"requires": [
+			"minecraft:adventure/trade"
+		],
+		"backing_advancement": "hardcore_achievements_plus:revival/emerald_magnate"
+	},
+	{
+		"id": "golem_forgemaster",
+		"title": "Golem Forgemaster",
+		"description": "Summon an iron golem and hold 4 iron blocks at once",
+		"icon": "minecraft:iron_block",
+		"repeatable": true,
+		"tier": 2,
+		"requires": [
+			"minecraft:adventure/summon_iron_golem"
+		],
+		"backing_advancement": "hardcore_achievements_plus:revival/golem_forgemaster"
+	},
+	{
+		"id": "into_the_deep_dark",
+		"title": "Into the Deep Dark",
+		"description": "Set foot in the deep dark \u2014 and live to tell of it",
+		"icon": "minecraft:sculk",
+		"repeatable": true,
+		"tier": 2,
+		"requires": [
+			"minecraft:story/mine_diamond"
+		],
+		"backing_advancement": "hardcore_achievements_plus:revival/into_the_deep_dark"
+	},
+	{
+		"id": "healers_hand",
+		"title": "Healer's Hand",
+		"description": "Cure a zombie villager",
+		"icon": "minecraft:golden_apple",
+		"repeatable": true,
+		"tier": 2,
+		"requires": [
+			"minecraft:adventure/trade"
+		],
+		"backing_advancement": "hardcore_achievements_plus:revival/healers_hand"
+	},
+	{
+		"id": "dungeon_delver",
+		"title": "Dungeon Delver",
+		"description": "Hold a saddle and a name tag at once \u2014 loot only found in the world's depths",
+		"icon": "minecraft:name_tag",
+		"repeatable": true,
+		"tier": 2,
+		"requires": [
+			"minecraft:adventure/kill_a_mob"
+		],
+		"backing_advancement": "hardcore_achievements_plus:revival/dungeon_delver"
+	},
+	{
+		"id": "master_apiarist",
+		"title": "Master Apiarist",
+		"description": "Hold 8 honeycomb and 4 honey bottles at once",
+		"icon": "minecraft:honeycomb",
+		"repeatable": true,
+		"tier": 2,
+		"requires": [
+			"minecraft:husbandry/plant_seed"
+		],
+		"backing_advancement": "hardcore_achievements_plus:revival/master_apiarist"
+	},
+	{
+		"id": "redstone_engineer",
+		"title": "Redstone Engineer",
+		"description": "Hold 8 observers, 8 pistons and 64 redstone dust at once",
+		"icon": "minecraft:piston",
+		"repeatable": true,
+		"tier": 2,
+		"requires": [
+			"minecraft:story/iron_tools"
+		],
+		"backing_advancement": "hardcore_achievements_plus:revival/redstone_engineer"
+	},
+	{
+		"id": "blaze_battalion",
+		"title": "Blaze Battalion",
+		"description": "Slay a blaze, a wither skeleton and a ghast",
+		"icon": "minecraft:blaze_powder",
+		"repeatable": true,
+		"tier": 3,
+		"requires": [
+			"minecraft:nether/obtain_blaze_rod"
+		],
+		"backing_advancement": "hardcore_achievements_plus:revival/blaze_battalion"
+	},
+	{
+		"id": "potion_master",
+		"title": "Potion Master",
+		"description": "Brew a potion and hold a ghast tear at once",
+		"icon": "minecraft:brewing_stand",
+		"repeatable": true,
+		"tier": 3,
+		"requires": [
+			"minecraft:nether/brew_potion"
+		],
+		"backing_advancement": "hardcore_achievements_plus:revival/potion_master"
+	},
+	{
+		"id": "netherite_prospector",
+		"title": "Netherite Prospector",
+		"description": "Hold 4 ancient debris at once",
+		"icon": "minecraft:ancient_debris",
+		"repeatable": true,
+		"tier": 3,
+		"requires": [
+			"minecraft:nether/obtain_ancient_debris"
+		],
+		"backing_advancement": "hardcore_achievements_plus:revival/netherite_prospector"
+	},
+	{
+		"id": "piglin_diplomat",
+		"title": "Piglin Diplomat",
+		"description": "Distract a piglin with gold and hold 16 gold ingots at once",
+		"icon": "minecraft:gold_ingot",
+		"repeatable": true,
+		"tier": 3,
+		"requires": [
+			"minecraft:story/enter_the_nether"
+		],
+		"backing_advancement": "hardcore_achievements_plus:revival/piglin_diplomat"
+	},
+	{
+		"id": "fortress_raider",
+		"title": "Fortress Raider",
+		"description": "Kill a wither skeleton and hold 8 nether wart and 8 blaze rods at once",
+		"icon": "minecraft:nether_wart",
+		"repeatable": true,
+		"tier": 3,
+		"requires": [
+			"minecraft:nether/find_fortress"
+		],
+		"backing_advancement": "hardcore_achievements_plus:revival/fortress_raider"
+	},
+	{
+		"id": "tears_of_the_sky",
+		"title": "Tears of the Sky",
+		"description": "Kill a ghast and hold 2 ghast tears at once",
+		"icon": "minecraft:ghast_tear",
+		"repeatable": true,
+		"tier": 3,
+		"requires": [
+			"minecraft:story/enter_the_nether"
+		],
+		"backing_advancement": "hardcore_achievements_plus:revival/tears_of_the_sky"
+	},
+	{
+		"id": "hoglin_butcher",
+		"title": "Hoglin Butcher",
+		"description": "Kill a hoglin and hold 16 cooked porkchops at once",
+		"icon": "minecraft:cooked_porkchop",
+		"repeatable": true,
+		"tier": 3,
+		"requires": [
+			"minecraft:story/enter_the_nether"
+		],
+		"backing_advancement": "hardcore_achievements_plus:revival/hoglin_butcher"
+	},
+	{
+		"id": "strider_jockey",
+		"title": "Strider Jockey",
+		"description": "Ride a strider across the lava with a warped fungus on a stick",
+		"icon": "minecraft:warped_fungus_on_a_stick",
+		"repeatable": true,
+		"tier": 3,
+		"requires": [
+			"minecraft:story/enter_the_nether"
+		],
+		"backing_advancement": "hardcore_achievements_plus:revival/strider_jockey"
+	},
+	{
+		"id": "crimson_harvest",
+		"title": "Crimson Harvest",
+		"description": "Hold 16 crimson stems, 16 warped stems and 8 shroomlights at once",
+		"icon": "minecraft:shroomlight",
+		"repeatable": true,
+		"tier": 3,
+		"requires": [
+			"minecraft:story/enter_the_nether"
+		],
+		"backing_advancement": "hardcore_achievements_plus:revival/crimson_harvest"
+	},
+	{
+		"id": "anchor_keeper",
+		"title": "Anchor Keeper",
+		"description": "Hold a respawn anchor and 8 glowstone blocks at once",
+		"icon": "minecraft:respawn_anchor",
+		"repeatable": true,
+		"tier": 3,
+		"requires": [
+			"minecraft:nether/obtain_crying_obsidian"
+		],
+		"backing_advancement": "hardcore_achievements_plus:revival/anchor_keeper"
+	},
+	{
+		"id": "dragons_bane",
+		"title": "Dragon's Bane",
+		"description": "Slay the Ender Dragon to trade its life for your friend's",
+		"icon": "minecraft:dragon_head",
+		"repeatable": false,
+		"tier": 4,
+		"requires": [
+			"minecraft:end/root"
+		],
+		"backing_advancement": "hardcore_achievements_plus:revival/dragons_bane"
+	},
+	{
+		"id": "wither_reaper",
+		"title": "Wither Reaper",
+		"description": "Summon and destroy the Wither",
+		"icon": "minecraft:wither_skeleton_skull",
+		"repeatable": false,
+		"tier": 4,
+		"requires": [
+			"minecraft:nether/summon_wither"
+		],
+		"backing_advancement": "hardcore_achievements_plus:revival/wither_reaper"
+	},
+	{
+		"id": "wings_of_salvation",
+		"title": "Wings of Salvation",
+		"description": "Claim an elytra from an end ship",
+		"icon": "minecraft:elytra",
+		"repeatable": false,
+		"tier": 4,
+		"requires": [
+			"minecraft:end/find_end_city"
+		],
+		"backing_advancement": "hardcore_achievements_plus:revival/wings_of_salvation"
+	},
+	{
+		"id": "shell_game",
+		"title": "Shell Game",
+		"description": "Hold 4 shulker shells at once",
+		"icon": "minecraft:shulker_shell",
+		"repeatable": true,
+		"tier": 4,
+		"requires": [
+			"minecraft:end/find_end_city"
+		],
+		"backing_advancement": "hardcore_achievements_plus:revival/shell_game"
+	},
+	{
+		"id": "full_spectrum_beacon",
+		"title": "Full Spectrum",
+		"description": "Construct a full-power (level 4) beacon pyramid",
+		"icon": "minecraft:beacon",
+		"repeatable": false,
+		"tier": 4,
+		"requires": [
+			"minecraft:nether/create_beacon"
+		],
+		"backing_advancement": "hardcore_achievements_plus:revival/full_spectrum_beacon"
+	},
+	{
+		"id": "totem_gambit",
+		"title": "Totem Gambit",
+		"description": "Cheat death with a totem of undying \u2014 trade your spare life for theirs",
+		"icon": "minecraft:totem_of_undying",
+		"repeatable": true,
+		"tier": 4,
+		"requires": [
+			"minecraft:adventure/totem_of_undying"
+		],
+		"backing_advancement": "hardcore_achievements_plus:revival/totem_gambit"
+	},
+	{
+		"id": "end_gardener",
+		"title": "End Gardener",
+		"description": "Hold 32 chorus fruit and 16 purpur blocks at once",
+		"icon": "minecraft:chorus_fruit",
+		"repeatable": true,
+		"tier": 4,
+		"requires": [
+			"minecraft:end/enter_end_gateway"
+		],
+		"backing_advancement": "hardcore_achievements_plus:revival/end_gardener"
+	},
+	{
+		"id": "breath_of_the_dragon",
+		"title": "Breath of the Dragon",
+		"description": "Bottle 4 dragon's breath",
+		"icon": "minecraft:dragon_breath",
+		"repeatable": true,
+		"tier": 4,
+		"requires": [
+			"minecraft:end/kill_dragon"
+		],
+		"backing_advancement": "hardcore_achievements_plus:revival/breath_of_the_dragon"
+	},
+	{
+		"id": "netherite_lord",
+		"title": "Netherite Lord",
+		"description": "Forge and hold 2 netherite ingots at once",
+		"icon": "minecraft:netherite_ingot",
+		"repeatable": true,
+		"tier": 4,
+		"requires": [
+			"minecraft:nether/obtain_ancient_debris"
+		],
+		"backing_advancement": "hardcore_achievements_plus:revival/netherite_lord"
+	},
+	{
+		"id": "eyes_of_ender",
+		"title": "Eyes of Ender",
+		"description": "Kill an enderman and hold 12 eyes of ender at once",
+		"icon": "minecraft:ender_eye",
+		"repeatable": true,
+		"tier": 4,
+		"requires": [
+			"minecraft:story/follow_ender_eye"
+		],
+		"backing_advancement": "hardcore_achievements_plus:revival/eyes_of_ender"
+	}
+]

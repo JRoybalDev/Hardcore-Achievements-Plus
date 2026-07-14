@@ -1,0 +1,50 @@
+{
+	"parent": "hardcore_achievements_plus:revival/tier_0",
+	"criteria": {
+		"ores": {
+			"conditions": {
+				"items": [
+					{
+						"items": "minecraft:raw_iron",
+						"count": {
+							"min": 16
+						}
+					},
+					{
+						"items": "minecraft:raw_copper",
+						"count": {
+							"min": 16
+						}
+					},
+					{
+						"items": "minecraft:raw_gold",
+						"count": {
+							"min": 8
+						}
+					}
+				]
+			},
+			"trigger": "minecraft:inventory_changed"
+		}
+	},
+	"requirements": [
+		[
+			"ores"
+		]
+	],
+	"display": {
+		"title": {
+			"text": "Raw Riches"
+		},
+		"description": {
+			"text": "Hold 16 raw iron, 16 raw copper and 8 raw gold at once"
+		},
+		"icon": {
+			"id": "minecraft:raw_gold"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"sends_telemetry_event": false
+}

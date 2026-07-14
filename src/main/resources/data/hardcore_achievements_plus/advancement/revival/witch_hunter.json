@@ -1,0 +1,39 @@
+{
+	"parent": "hardcore_achievements_plus:revival/tier_0",
+	"criteria": {
+		"kill_witch": {
+			"conditions": {
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"minecraft:entity_type": "minecraft:witch"
+						}
+					}
+				]
+			},
+			"trigger": "minecraft:player_killed_entity"
+		}
+	},
+	"requirements": [
+		[
+			"kill_witch"
+		]
+	],
+	"display": {
+		"title": {
+			"text": "Witch Hunter"
+		},
+		"description": {
+			"text": "Hunt down and kill a witch"
+		},
+		"icon": {
+			"id": "minecraft:glass_bottle"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"sends_telemetry_event": false
+}

@@ -1,0 +1,35 @@
+{
+	"parent": "hardcore_achievements_plus:revival/tier_4",
+	"criteria": {
+		"elytra": {
+			"conditions": {
+				"items": [
+					{
+						"items": "minecraft:elytra"
+					}
+				]
+			},
+			"trigger": "minecraft:inventory_changed"
+		}
+	},
+	"requirements": [
+		[
+			"elytra"
+		]
+	],
+	"display": {
+		"title": {
+			"text": "Wings of Salvation"
+		},
+		"description": {
+			"text": "Claim an elytra from an end ship"
+		},
+		"icon": {
+			"id": "minecraft:elytra"
+		},
+		"frame": "challenge",
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"sends_telemetry_event": false
+}

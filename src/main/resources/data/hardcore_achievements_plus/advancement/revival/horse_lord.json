@@ -1,0 +1,39 @@
+{
+	"parent": "hardcore_achievements_plus:revival/tier_1",
+	"criteria": {
+		"tame_horse": {
+			"conditions": {
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"minecraft:entity_type": "minecraft:horse"
+						}
+					}
+				]
+			},
+			"trigger": "minecraft:tame_animal"
+		}
+	},
+	"requirements": [
+		[
+			"tame_horse"
+		]
+	],
+	"display": {
+		"title": {
+			"text": "Horse Lord"
+		},
+		"description": {
+			"text": "Tame a horse"
+		},
+		"icon": {
+			"id": "minecraft:hay_block"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"sends_telemetry_event": false
+}

@@ -1,0 +1,41 @@
+{
+	"parent": "hardcore_achievements_plus:revival/tier_1",
+	"criteria": {
+		"nav": {
+			"conditions": {
+				"items": [
+					{
+						"items": "minecraft:map"
+					},
+					{
+						"items": "minecraft:compass"
+					},
+					{
+						"items": "minecraft:clock"
+					}
+				]
+			},
+			"trigger": "minecraft:inventory_changed"
+		}
+	},
+	"requirements": [
+		[
+			"nav"
+		]
+	],
+	"display": {
+		"title": {
+			"text": "Cartographer's Eye"
+		},
+		"description": {
+			"text": "Hold a map, a compass and a clock at once"
+		},
+		"icon": {
+			"id": "minecraft:compass"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"sends_telemetry_event": false
+}

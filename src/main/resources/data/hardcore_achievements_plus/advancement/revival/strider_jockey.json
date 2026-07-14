@@ -1,0 +1,44 @@
+{
+	"parent": "hardcore_achievements_plus:revival/tier_3",
+	"criteria": {
+		"used_warped_fungus_on_a_stick": {
+			"conditions": {
+				"item": {
+					"items": "minecraft:warped_fungus_on_a_stick"
+				},
+				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"minecraft:vehicle": {
+								"minecraft:entity_type": "minecraft:strider"
+							}
+						}
+					}
+				]
+			},
+			"trigger": "minecraft:item_durability_changed"
+		}
+	},
+	"requirements": [
+		[
+			"used_warped_fungus_on_a_stick"
+		]
+	],
+	"display": {
+		"title": {
+			"text": "Strider Jockey"
+		},
+		"description": {
+			"text": "Ride a strider across the lava with a warped fungus on a stick"
+		},
+		"icon": {
+			"id": "minecraft:warped_fungus_on_a_stick"
+		},
+		"frame": "goal",
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"sends_telemetry_event": false
+}

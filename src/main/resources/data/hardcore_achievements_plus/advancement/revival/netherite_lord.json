@@ -1,0 +1,38 @@
+{
+	"parent": "hardcore_achievements_plus:revival/tier_4",
+	"criteria": {
+		"ingots": {
+			"conditions": {
+				"items": [
+					{
+						"items": "minecraft:netherite_ingot",
+						"count": {
+							"min": 2
+						}
+					}
+				]
+			},
+			"trigger": "minecraft:inventory_changed"
+		}
+	},
+	"requirements": [
+		[
+			"ingots"
+		]
+	],
+	"display": {
+		"title": {
+			"text": "Netherite Lord"
+		},
+		"description": {
+			"text": "Forge and hold 2 netherite ingots at once"
+		},
+		"icon": {
+			"id": "minecraft:netherite_ingot"
+		},
+		"frame": "goal",
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"sends_telemetry_event": false
+}

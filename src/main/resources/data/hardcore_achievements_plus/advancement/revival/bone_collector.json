@@ -1,0 +1,50 @@
+{
+	"parent": "hardcore_achievements_plus:revival/tier_1",
+	"criteria": {
+		"trophies": {
+			"conditions": {
+				"items": [
+					{
+						"items": "minecraft:bone",
+						"count": {
+							"min": 32
+						}
+					},
+					{
+						"items": "minecraft:string",
+						"count": {
+							"min": 16
+						}
+					},
+					{
+						"items": "minecraft:gunpowder",
+						"count": {
+							"min": 16
+						}
+					}
+				]
+			},
+			"trigger": "minecraft:inventory_changed"
+		}
+	},
+	"requirements": [
+		[
+			"trophies"
+		]
+	],
+	"display": {
+		"title": {
+			"text": "Bone Collector"
+		},
+		"description": {
+			"text": "Hold 32 bones, 16 string and 16 gunpowder at once"
+		},
+		"icon": {
+			"id": "minecraft:bone"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"sends_telemetry_event": false
+}

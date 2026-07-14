@@ -1,0 +1,55 @@
+{
+	"parent": "hardcore_achievements_plus:revival/tier_4",
+	"criteria": {
+		"kill_enderman": {
+			"conditions": {
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"minecraft:entity_type": "minecraft:enderman"
+						}
+					}
+				]
+			},
+			"trigger": "minecraft:player_killed_entity"
+		},
+		"eyes": {
+			"conditions": {
+				"items": [
+					{
+						"items": "minecraft:ender_eye",
+						"count": {
+							"min": 12
+						}
+					}
+				]
+			},
+			"trigger": "minecraft:inventory_changed"
+		}
+	},
+	"requirements": [
+		[
+			"kill_enderman"
+		],
+		[
+			"eyes"
+		]
+	],
+	"display": {
+		"title": {
+			"text": "Eyes of Ender"
+		},
+		"description": {
+			"text": "Kill an enderman and hold 12 eyes of ender at once"
+		},
+		"icon": {
+			"id": "minecraft:ender_eye"
+		},
+		"frame": "goal",
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"sends_telemetry_event": false
+}

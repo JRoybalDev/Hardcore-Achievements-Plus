@@ -1,0 +1,38 @@
+{
+	"parent": "hardcore_achievements_plus:revival/tier_0",
+	"criteria": {
+		"torches": {
+			"conditions": {
+				"items": [
+					{
+						"items": "minecraft:torch",
+						"count": {
+							"min": 64
+						}
+					}
+				]
+			},
+			"trigger": "minecraft:inventory_changed"
+		}
+	},
+	"requirements": [
+		[
+			"torches"
+		]
+	],
+	"display": {
+		"title": {
+			"text": "Light the Way"
+		},
+		"description": {
+			"text": "Hold a full stack of 64 torches at once"
+		},
+		"icon": {
+			"id": "minecraft:torch"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"sends_telemetry_event": false
+}

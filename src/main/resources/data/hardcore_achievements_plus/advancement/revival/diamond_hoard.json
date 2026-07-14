@@ -1,0 +1,38 @@
+{
+	"parent": "hardcore_achievements_plus:revival/tier_2",
+	"criteria": {
+		"diamonds": {
+			"conditions": {
+				"items": [
+					{
+						"items": "minecraft:diamond",
+						"count": {
+							"min": 8
+						}
+					}
+				]
+			},
+			"trigger": "minecraft:inventory_changed"
+		}
+	},
+	"requirements": [
+		[
+			"diamonds"
+		]
+	],
+	"display": {
+		"title": {
+			"text": "Diamond Hoard"
+		},
+		"description": {
+			"text": "Hold 8 diamonds at once"
+		},
+		"icon": {
+			"id": "minecraft:diamond"
+		},
+		"frame": "task",
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"sends_telemetry_event": false
+}
