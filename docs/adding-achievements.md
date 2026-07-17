@@ -14,6 +14,28 @@ They are linked by the definition's `backing_advancement` id. At server start th
 > ./gradlew build
 > ```
 
+## Step by step: adding an achievement
+
+1. **Design the task.** One sentence: *what must a living player do?* Check it against the [design rules](#design-rules) — most ideas that fail do so because they need kill-counting (not expressible) or a biome-lottery item.
+
+2. **Pick the tier and the gate.** Decide which progression stage the task belongs to (0 Embers → 4 Inferno), then pick a vanilla advancement that *proves* a player has reached that stage — that id goes in `requires`. Use the [vanilla reference tables](#vanilla-advancement-reference) below or the interactive [advancement atlas](advancement-atlas.html); the tier chip on the gate should match your entry's tier.
+
+3. **Copy a template.** [`achievement-template.py`](achievement-template.py) has a fully-commented blank entry plus one worked example per criteria type (items-with-counts, kills, checklists, breeding/taming/summoning, biomes, bare triggers, vanilla-criteria reuse). Copy the closest block into the `ROSTER` list in `scripts/gen_achievements.py`.
+
+4. **Fill in the fields** — id, title, mission-statement description, icon, tier, criteria, `requires`, `repeatable`. The field reference and helper gallery in the next two sections cover every option.
+
+5. **Regenerate.** `python3 scripts/gen_achievements.py` rewrites the definitions file and all backing advancements (and asserts your id is unique). Then `./gradlew build`.
+
+6. **Verify at startup.** Start the dev server (`./gradlew runServer`) and look for `Revival achievements active: N/N` — the count should include your entry. If it was disabled instead, the log line names the problem (unknown `requires` id, missing backing advancement, bad icon).
+
+7. **Test in game.** In a hardcore dev world: check your entry appears in the advancements tab (L) and the H panel's Available section with the right lock state. To test the full loop quickly, have one player die, then complete the task — or shortcut the completion with:
+
+   ```
+   /advancement grant <player> only hardcore_achievements_plus:revival/<id>
+   ```
+
+   The grant command goes through the same code path as a real completion, so it revives the fallen player, records the completion, and (for repeatables) re-arms the backing advancement.
+
 ## The `ach(...)` entry
 
 ```python
