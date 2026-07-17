@@ -1,13 +1,20 @@
 # ---------------------------------------------------------------------------
-# REVIVAL ACHIEVEMENT TEMPLATE
+# REVIVAL ACHIEVEMENT TEMPLATE  (reference only — this file is NEVER executed)
 #
-# Copy one of the blocks below into the ROSTER list in
-# scripts/gen_achievements.py, fill in the fields, then regenerate:
+# The generator only reads the ROSTER list in scripts/gen_achievements.py.
+# Nothing in THIS file needs to be edited, commented out, or deleted.
 #
-#     python3 scripts/gen_achievements.py
-#     ./gradlew build
+# To add an achievement:
+#   1. Pick ONE block below (the full shape, or the closest gallery example).
+#   2. Paste it INSIDE the `ROSTER = [ ... ]` list in scripts/gen_achievements.py,
+#      next to the other entries of the same tier.
+#   3. Edit the fields, then regenerate and build:
 #
-# This file is documentation only — it is never executed.
+#         python3 scripts/gen_achievements.py
+#         ./gradlew build
+#
+# Everything in ROSTER becomes a real in-game achievement — so edit your
+# pasted block there; leave this template untouched.
 # ---------------------------------------------------------------------------
 
 # === THE FULL SHAPE, EVERY FIELD EXPLAINED ================================
