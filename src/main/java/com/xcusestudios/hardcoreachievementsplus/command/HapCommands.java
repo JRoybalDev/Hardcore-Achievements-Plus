@@ -13,6 +13,7 @@ import net.minecraft.server.MinecraftServer;
 
 import com.xcusestudios.hardcoreachievementsplus.def.AchievementLoader;
 import com.xcusestudios.hardcoreachievementsplus.def.RevivalAchievement;
+import com.xcusestudios.hardcoreachievementsplus.logic.Announcer;
 import com.xcusestudios.hardcoreachievementsplus.net.SyncPayloads;
 import com.xcusestudios.hardcoreachievementsplus.state.RevivalState;
 
@@ -67,11 +68,12 @@ public final class HapCommands {
 		} else {
 			state.pending().forEach((uuid, revival) -> {
 				RevivalAchievement achievement = AchievementLoader.active().get(revival.achievementId());
-				String title = achievement != null ? achievement.title() : revival.achievementId();
+				Component name = achievement != null
+						? Announcer.achievementName(achievement)
+						: Component.literal(revival.achievementId()).withStyle(ChatFormatting.GOLD);
 				ctx.getSource().sendSuccess(() -> Component.translatableWithFallback(
 						"hardcore_achievements_plus.command.status_pending", "%s awaits revival: %s",
-						revival.playerName(),
-						Component.literal(title).withStyle(ChatFormatting.GOLD)), false);
+						revival.playerName(), name), false);
 			});
 		}
 		return 1;

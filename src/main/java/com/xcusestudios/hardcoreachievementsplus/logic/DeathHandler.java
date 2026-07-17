@@ -129,7 +129,7 @@ public final class DeathHandler {
 				Component.translatableWithFallback("hardcore_achievements_plus.chat.assigned",
 						"%s has fallen! Complete the revival achievement %s to bring them back: %s",
 						deadName,
-						Component.literal(achievement.title()).withStyle(ChatFormatting.GOLD),
+						Announcer.achievementName(achievement),
 						Component.literal(achievement.description()).withStyle(ChatFormatting.YELLOW)),
 				false);
 
@@ -139,9 +139,11 @@ public final class DeathHandler {
 							"All players have fallen. The world's fate now rests on whoever joins next...")
 							.withStyle(ChatFormatting.DARK_RED),
 					false);
+			Announcer.announceGameOver(server);
+		} else {
+			Announcer.announceDeath(server, deadName, achievement);
 		}
 
-		SyncPayloads.broadcastAssignment(server, achievement, deadName);
 		SyncPayloads.broadcastState(server);
 	}
 

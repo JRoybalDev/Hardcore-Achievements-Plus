@@ -69,13 +69,13 @@ src/main/java/com/xcusestudios/hardcoreachievementsplus/
   logic/CompletionHandler.java           (mixin hook target: backing advancement awarded → revive)
   logic/Reviver.java                     (spectator → survival, restore stats, respawn-point teleport, inventory restore, broadcast)
   command/HapCommands.java               (/hap inventoryRestore, /hap status — OP level 2+)
-  net/SyncPayloads.java                  (S2C: full panel state, new-assignment toast)
+  net/SyncPayloads.java                  (S2C: full panel state)
+  logic/Announcer.java                   (vanilla title/subtitle/action-bar cards + sounds, no client mod needed)
   mixin/PlayerAdvancementsMixin.java     (inject into award() to detect backing completions)
 
 src/client/java/com/xcusestudios/hardcoreachievementsplus/client/
   HardcoreAchievementsPlusClient.java    (keybind, payload receivers, client cache)
-  gui/AchievementPanelScreen.java        (custom screen: Active / Completed sections)
-  gui/AchievementToast.java              (popup when a revival achievement is assigned)
+  gui/AchievementPanelScreen.java        (custom screen: Active / Available / Completed sections)
 ```
 
 ## Phases

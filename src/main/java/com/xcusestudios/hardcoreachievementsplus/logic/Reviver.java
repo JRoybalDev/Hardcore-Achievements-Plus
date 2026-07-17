@@ -88,5 +88,6 @@ public final class Reviver {
 						"%s has been revived!",
 						player.getName().getString()).withStyle(ChatFormatting.GREEN),
 				false);
+		Announcer.announceRevival(server, player);
 	}
 }

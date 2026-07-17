@@ -13,8 +13,6 @@ import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
 import net.minecraft.client.KeyMapping;
 
 import com.xcusestudios.hardcoreachievementsplus.client.gui.AchievementPanelScreen;
-import com.xcusestudios.hardcoreachievementsplus.client.gui.AchievementToast;
-import com.xcusestudios.hardcoreachievementsplus.net.SyncPayloads.AssignmentPayload;
 import com.xcusestudios.hardcoreachievementsplus.net.SyncPayloads.PanelStatePayload;
 
 public class HardcoreAchievementsPlusClient implements ClientModInitializer {
@@ -31,9 +29,6 @@ public class HardcoreAchievementsPlusClient implements ClientModInitializer {
 		ClientPlayNetworking.registerGlobalReceiver(PanelStatePayload.TYPE, (payload, context) ->
 				ClientRevivalCache.update(payload.active(), payload.completed(), payload.upcoming(),
 						payload.restoreInventory()));
-
-		ClientPlayNetworking.registerGlobalReceiver(AssignmentPayload.TYPE, (payload, context) ->
-				AchievementToast.show(context.client(), payload.achievementId(), payload.deadPlayerName()));
 
 		ClientPlayConnectionEvents.DISCONNECT.register((handler, client) -> ClientRevivalCache.clear());
 

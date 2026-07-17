@@ -14,8 +14,14 @@
 	"hardcore_achievements_plus.command.status_no_pending": "No pending revivals",
 	"hardcore_achievements_plus.command.status_pending": "%s awaits revival: %s",
 
-	"hardcore_achievements_plus.toast.title": "Revival Achievement!",
-	"hardcore_achievements_plus.toast.body": "%s — revives %s",
+	"hardcore_achievements_plus.tooltip.one_time": "One-time",
+
+	"hardcore_achievements_plus.title.fallen": "☠ %s has fallen ☠",
+	"hardcore_achievements_plus.title.fallen_sub": "✦ Revival: %s ✦",
+	"hardcore_achievements_plus.title.revived": "✦ %s has returned! ✦",
+	"hardcore_achievements_plus.title.revived_sub": "The revival achievement is complete",
+	"hardcore_achievements_plus.title.game_over": "☠ GAME OVER ☠",
+	"hardcore_achievements_plus.title.game_over_sub": "All players have fallen",
 
 	"hardcore_achievements_plus.panel.title": "Revival Achievements",
 	"hardcore_achievements_plus.panel.active": "Active",

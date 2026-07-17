@@ -79,28 +79,11 @@ public final class SyncPayloads {
 				CompletionEntry::new);
 	}
 
-	/** Fired when a revival achievement is assigned; the client shows a toast. */
-	public record AssignmentPayload(String achievementId, String deadPlayerName)
-			implements CustomPacketPayload {
-		public static final Type<AssignmentPayload> TYPE =
-				new Type<>(HardcoreAchievementsPlus.id("assignment"));
-		public static final StreamCodec<ByteBuf, AssignmentPayload> STREAM_CODEC = StreamCodec.composite(
-				ByteBufCodecs.STRING_UTF8, AssignmentPayload::achievementId,
-				ByteBufCodecs.STRING_UTF8, AssignmentPayload::deadPlayerName,
-				AssignmentPayload::new);
-
-		@Override
-		public Type<AssignmentPayload> type() {
-			return TYPE;
-		}
-	}
-
 	private SyncPayloads() {
 	}
 
 	public static void register() {
 		PayloadTypeRegistry.clientboundPlay().register(PanelStatePayload.TYPE, PanelStatePayload.STREAM_CODEC);
-		PayloadTypeRegistry.clientboundPlay().register(AssignmentPayload.TYPE, AssignmentPayload.STREAM_CODEC);
 	}
 
 	// The client half of this mod is optional: vanilla clients get everything
@@ -116,16 +99,6 @@ public final class SyncPayloads {
 		PanelStatePayload payload = buildState(server);
 		for (ServerPlayer player : server.getPlayerList().getPlayers()) {
 			if (ServerPlayNetworking.canSend(player, PanelStatePayload.TYPE)) {
-				ServerPlayNetworking.send(player, payload);
-			}
-		}
-	}
-
-	public static void broadcastAssignment(MinecraftServer server, RevivalAchievement achievement,
-			String deadPlayerName) {
-		AssignmentPayload payload = new AssignmentPayload(achievement.id(), deadPlayerName);
-		for (ServerPlayer player : server.getPlayerList().getPlayers()) {
-			if (ServerPlayNetworking.canSend(player, AssignmentPayload.TYPE)) {
 				ServerPlayNetworking.send(player, payload);
 			}
 		}

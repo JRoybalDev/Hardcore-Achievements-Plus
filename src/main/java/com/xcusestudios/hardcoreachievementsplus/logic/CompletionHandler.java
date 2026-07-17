@@ -74,7 +74,7 @@ public final class CompletionHandler {
 				Component.translatableWithFallback("hardcore_achievements_plus.chat.completed",
 						"%s completed the revival achievement %s!",
 						completerName,
-						Component.literal(achievement.title()).withStyle(ChatFormatting.GOLD)),
+						Announcer.achievementName(achievement)),
 				false);
 
 		List<UUID> toRevive = new ArrayList<>(deadPlayers);
